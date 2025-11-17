@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "eafdd6d3-d61e-4411-bf27-8711262ef72c",
+    "name": "Todo API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30144768",
+    "_collection_link": "https://bold-spaceship-231935.postman.co/workspace/Mindx~2dd3d1cd-ee1d-468f-8078-a38328d0750c/collection/30144768-eafdd6d3-d61e-4411-bf27-8711262ef72c?action=share&source=collection_link&creator=30144768"
+  },
+  "item": [
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "get all tasks",
+          "id": "5aec7891-bb49-4146-829e-902163cb87fb",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_API}}tasks",
+              "host": [
+                "{{BASE_API}}tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create new task",
+          "id": "45cb51db-e2f7-4642-93a5-e763a884c381",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"tests3\",\r\n    \"completed\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_API}}tasks",
+              "host": [
+                "{{BASE_API}}tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete task by id",
+          "id": "dd2dcf74-b607-4092-9c0c-950df95dad5f",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"test 123\",\r\n    \"completed\": \"false\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_API}}tasks/7603",
+              "host": [
+                "{{BASE_API}}tasks"
+              ],
+              "path": [
+                "7603"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "74de5b04-6406-438c-a546-f25acd07c80e"
+    }
+  ]
+}
